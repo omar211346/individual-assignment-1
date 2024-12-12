@@ -1,0 +1,121 @@
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+ /*-------------------- header styling ----------- */
+.header__container-links{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color); 
+}
+
+.header__links-container{
+    display: flex;
+    padding-top: var(--padding-large);
+    gap: 2rem ;
+}
+
+.header__link{
+    display: flex;
+    border: 2px solid var(--primary-color);
+    border-radius: 20%;
+}
+
+.header__link a{
+   color: var(--text-color);
+    font-size: var(--fontsoze-medium);
+    padding: var(--fontsize-small) var(--fontsize-base);
+    cursor: pointer;
+}
+
+.header__link a:hover{
+    background-color: var(--primary-color);
+    color: whitesmoke;
+
+}
+
+
+        /* --------------main body for product information and image------------ */
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.product-container{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: auto-fit (repeat(minmax 20px, 1fr));
+    background-color: var(--primary-color);
+    padding: var(--padding-large );
+    
+}
+
+.product-container__image{
+    border: 2px solid var(--secondary-color);
+    border-radius: 20%;
+    align-items: center;
+    margin-bottom: var(--padding-medium);
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.product-container__title{
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.product-continar__list{
+    padding: var(--padding-medium);
+    margin: var(--padding-medium);
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-medium);
+    color: var(--secondary-color);
+    border: 2px solid var(--text-color);
+    background-color:var(--text-color);
+    border-radius: 20%;
+    text-align: center;
+}
+
+        /* ---------------------foooter adjustments--------- */
+.footer__description{
+    width: 100%;    
+    display: flex;
+    padding: 1rem 2rem; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin-top: auto;
+}
+
+.footer__description-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__description-links li a{
+    color: var(--primary-color);
+    transition: var(--text-color).3 ease-in;
+}
+.footer__description-links li a:hover{
+    color: var(--text-color);
+}
+
+
+
+
+
