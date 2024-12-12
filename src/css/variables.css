@@ -1,3 +1,18 @@
+
+@font-face {
+    font-family: "lato";
+    src: url(../assets/font/Lato-Black.ttf);
+}
+@font-face {
+    font-family: "lato";
+    src: url(../assets/font/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: "lato";
+    src: url(../assets/font/Lato-BlackItalic.ttf);
+}
+
+
 /* color */
 :root{
 
